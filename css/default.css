@@ -1,0 +1,92 @@
+html,body{height:100%;overflow:hidden;min-width:1000px;}
+body {margin:0;padding:0;background:#ffe;font-size:14px;font-family:'微软雅黑','宋体',sans-serif;color:#231F20;}
+a {color:#000;font-size:14px;}
+
+#text{width:400px;height:425px;left:60px;top:80px;position:absolute;}
+#code{display:none;font-size:16px;}
+#clock-box {position:absolute;left:60px;top:550px;font-size:28px;display:none;}
+#clock-box a {font-size:28px;text-decoration:none;}
+#clock{margin-left:48px;}
+#clock .digit {font-size:34px;}
+#canvas{margin:0 auto;width:1100px;height:680px;}
+#error{margin:0 auto;text-align:center;margin-top:60px;display:none;}
+.hand{cursor:pointer;}
+.say{margin-left:5px;}
+.space{margin-right:150px;}
+/*animation*/
+.jump{-webkit-animation:jump 1s ease-out infinite;animation:jump 1s ease-out infinite;}
+@-webkit-keyframes jump{
+0%{-webkit-transform:translateY(3px);}
+50%{-webkit-transform:translateY(-5px);}
+100%{-webkit-transform:translateY(3px);}
+}
+@keyframes jump{
+0%{-webkit-transform:translateY(3px);}
+50%{-webkit-transform:translateY(-5px);}
+100%{-webkit-transform:translateY(3px);}
+}
+
+.fadeInUpBig{-webkit-animation:fadeInUpBig .8s .2s ease both;animation:fadeInUpBig .8s .2s ease both;top:250px;}
+@-webkit-keyframes fadeInUpBig{
+0%{opacity:0;-webkit-transform:translateY(2000px)}
+100%{opacity:1;-webkit-transform:translateY(0)}
+}
+@keyframes fadeInUpBig{
+0%{opacity:0;transform:translateY(2000px)}
+100%{opacity:1;transform:translateY(0)}
+}
+
+.fadeInDown{-webkit-animation:fadeInDown 1s .2s ease both;animation:fadeInDown 1s .2s ease both;top:230px}
+@-webkit-keyframes fadeInDown{
+0%{opacity:0;-webkit-transform:translateY(-20px)}
+100%{opacity:1;-webkit-transform:translateY(0)}
+}
+@keyframes fadeInDown{
+0%{opacity:0;transform:translateY(-20px)}
+100%{opacity:1;transform:translateY(0)}
+}
+
+.fadeIn{-webkit-animation:fadeIn 1s 1.6s ease both;animation:fadeIn 1s 1.6s ease both;}
+@-webkit-keyframes fadeIn{
+0%{opacity:0}
+100%{opacity:1}
+}
+@keyframes fadeIn{
+0%{opacity:0}
+100%{opacity:1}
+}
+
+.fadeOut{-webkit-animation:fadeOut 1s 0s ease both;animation:fadeOut 1s 0s ease both;}
+@-webkit-keyframes fadeOut{
+0%{opacity:1}
+100%{opacity:0}
+}
+@keyframes fadeOut{
+0%{opacity:1}
+100%{opacity:0}
+}
+
+.fadeInUp{-webkit-animation:fadeInUp 1s .2s ease both;animation:fadeInUp 1s .2s ease both;}
+@-webkit-keyframes fadeInUp{
+0%{opacity:0;-webkit-transform:translateY(20px)}
+100%{opacity:1;-webkit-transform:translateY(0)}
+}
+@keyframes fadeInUp{
+0%{opacity:0;transform:translateY(20px)}
+100%{opacity:1;transform:translateY(0)}
+}
+
+.bounceIn{-webkit-animation:bounceIn 1s .2s ease both;animation:bounceIn 1s .2s ease both;left:50%;}
+@-webkit-keyframes bounceIn{
+0%{opacity:0;-webkit-transform:scale(.3)}
+50%{opacity:1;-webkit-transform:scale(1.05)}
+70%{-webkit-transform:scale(.9)}
+100%{-webkit-transform:scale(1)}
+}
+
+@keyframes bounceIn{
+0%{opacity:0;transform:scale(.3)}
+50%{opacity:1;transform:scale(1.05)}
+70%{transform:scale(.9)}
+100%{transform:scale(1)}
+}
